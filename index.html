@@ -18,6 +18,16 @@
       <div class="class-mark">CLASS<br><strong>01</strong></div>
     </header>
 
+    <section class="menu-settings" aria-label="メニュー">
+      <button id="menuToggle" type="button" aria-expanded="false" aria-controls="menuPanel">メニュー</button>
+      <div id="menuPanel" class="menu-panel" hidden>
+        <label for="seatCountInput">席数</label>
+        <input id="seatCountInput" type="number" min="1" max="200" step="1" inputmode="numeric">
+        <button id="applySeatCount" type="button">席数を設定</button>
+        <small>1〜200席で設定できます</small>
+      </div>
+    </section>
+
     <section class="summary" aria-label="登録状況">
       <div class="summary-item"><span>登録済み</span><strong id="registeredCount">0</strong><small>人</small></div>
       <div class="summary-item"><span>空席</span><strong id="emptyCount">40</strong><small>席</small></div>
